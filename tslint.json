@@ -1,0 +1,32 @@
+{
+    "rules": {
+        "ordered-imports": [
+            true,
+            {
+                "grouped-imports": true,
+                "groups": [
+                    {
+                        "match": "^@b",
+                        "order": 20
+                    },
+                    {
+                        "match": "^[.][.]",
+                        "name": "parent_dir",
+                        "order": 30
+                    },
+                    {
+                        "match": "^[.]",
+                        "name": "current dir",
+                        "order": 40
+                    },
+                    {
+                        "match": ".*",
+                        "order": 10
+                    }
+                ],
+                "import-sources-order": "case-insensitive",
+                "named-imports-order": "case-insensitive"
+            }
+        ]
+    }
+}
